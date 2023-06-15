@@ -5,10 +5,10 @@ from spacy import load
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
-nltk.download('omw-1.4') # Open Multilingual Wordnet, this is an lexical database
-nltk.download('wordnet')
-nltk.download('wordnet2022')
-nltk.download('punkt')
+# nltk.download('omw-1.4') # Open Multilingual Wordnet, this is an lexical database
+# nltk.download('wordnet')
+# nltk.download('wordnet2022')
+# nltk.download('punkt')
 nltk.download('stopwords')
 
 
@@ -20,9 +20,9 @@ app = Flask(__name__)
 warnings.filterwarnings('ignore')
 
 # Load the pickled predictor function and tfidf object
-with open('model.pkl', 'rb') as file:
+with open('python backend/api/model.pkl', 'rb') as file:
     model = pickle.load(file)
-with open('tfidf.pkl', 'rb') as file:
+with open('python backend/api/tfidf.pkl', 'rb') as file:
     tf = pickle.load(file)
 
 lemmatizer = WordNetLemmatizer()
