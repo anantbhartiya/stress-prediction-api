@@ -20,9 +20,9 @@ app = Flask(__name__)
 warnings.filterwarnings('ignore')
 
 # Load the pickled predictor function and tfidf object
-with open('python backend/api/model.pkl', 'rb') as file:
+with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
-with open('python backend/api/tfidf.pkl', 'rb') as file:
+with open('tfidf.pkl', 'rb') as file:
     tf = pickle.load(file)
 
 lemmatizer = WordNetLemmatizer()
