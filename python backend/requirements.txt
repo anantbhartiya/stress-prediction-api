@@ -3,5 +3,4 @@ flask
 nltk
 spacy
 scikit-learn
-sklearn
 numpy
