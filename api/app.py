@@ -5,10 +5,10 @@ from spacy import load
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
-# nltk.download('omw-1.4') # Open Multilingual Wordnet, this is an lexical database
-# nltk.download('wordnet')
-# nltk.download('wordnet2022')
-# nltk.download('punkt')
+nltk.download('omw-1.4') # Open Multilingual Wordnet, this is an lexical database
+nltk.download('wordnet')
+nltk.download('wordnet2022')
+nltk.download('punkt')
 nltk.download('stopwords')
 
 
